@@ -84,11 +84,14 @@ public class Main {
         int day = 1;
         if (deliveryDistance < 20 ){
             System.out.println("Потребуется дней: "+ day);
-        } else if (deliveryDistance >= 20 && deliveryDistance < 60 )
-            System.out.println("Потребуется дней: "+ (day+1));
-        else if (deliveryDistance >= 60 && deliveryDistance <= 100 )
-            System.out.println("Потребуется дней: "+ (day+2));
-        else System.out.println("Свыше 100 км доставки нет");
+        } else if (deliveryDistance >= 20 && deliveryDistance < 60 ) {
+            System.out.println("Потребуется дней: " + (day + 1));
+        }
+        else if (deliveryDistance >= 60 && deliveryDistance <= 100 ) {
+            System.out.println("Потребуется дней: " + (day + 2));
+        }
+        else {
+            System.out.println("Свыше 100 км доставки нет");}
 
         //Задача5
         /*Напишите программу, которая определяет по номеру месяца в году, к какому сезону этот месяц принадлежит.
